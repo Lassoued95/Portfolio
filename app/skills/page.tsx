@@ -27,7 +27,7 @@ function Skills() {
   return (
     <div className={styles.skills}>
       <h1 className={styles.abouttwo}>Mastering the Craft!!</h1>
-      <h2 className={styles.academic}>"AS A DEVELOPER💻"</h2>
+      <h2 className={styles.academic}>`&quot;`AS A DEVELOPER💻`&quot;`</h2>
       
       {/* Render images for the developer section */}
       <div className={styles.imageGallery}>
@@ -41,7 +41,7 @@ function Skills() {
         ))}
       </div>
 
-      <h2 className={styles.academic}>"AS A PHOTOGRAPHER🌟"</h2>
+      <h2 className={styles.academic}>`&quot;`AS A PHOTOGRAPHER🌟`&quot;`</h2>
       
       {/* Render images for the photographer section */}
       <div className={styles.imageGallery}>

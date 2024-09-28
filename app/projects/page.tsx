@@ -35,7 +35,7 @@ function Projects() {
   return (
     <div>
       <h1 className={styles.abouttwo}>Digital Masterpieces🎨!</h1>
-      <h2 className={styles.academic}>"AS A DEVELOPER💻"</h2>
+      <h2 className={styles.academic}>`&quot;`AS A DEVELOPER💻`&quot;`</h2>
 
       <a href="https://mindmastershackathon.netlify.app">
         <img
@@ -50,7 +50,7 @@ function Projects() {
         under 12 hours during the Coding Moon Challenge Hackathon!
       </p>
 
-      <h2 className={styles.academic}>"AS A Photographer📷"</h2>
+      <h2 className={styles.academic}>`&quot;`AS A Photographer📷`&quot;`</h2>
       <div className={styles.imageGallery}>
         {images.map((image, index) =>
           image.link ? (

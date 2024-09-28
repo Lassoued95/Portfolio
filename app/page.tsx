@@ -5,7 +5,6 @@ import About from "./about/page";
 import Aboutt from "./abouttwo/page";
 import TypewriterComponent from './aboutthree/page'; // Importing the TypewriterComponent
 import NAVBAR from "./navbar/page"; 
-import ScrollAnimation from"./scroll/page";
 import Skills from "./skills/page";
 import Projects from "./projects/page";
 import ContactForm from"./contact/page";
@@ -37,7 +36,7 @@ function Home() {
       
       <p className={styles.cardd} id="intro">Hi, Dreamers! 💭 👋</p>  {/* Add an ID here */}
       <div> 
-          <p className={styles.me}>I'm a</p>
+          <p className={styles.me}>I`&apos;`m a</p>
         </div>
       <div className={styles.code}>
       <span className="emoji"></span>
