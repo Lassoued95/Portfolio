@@ -11,8 +11,8 @@ function ContactForm() {
     message: ""
   });
 
-  // Handle input changes
-  const handleChange = (e) => {
+  // Handle input changes for both <input> and <textarea>
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -21,14 +21,14 @@ function ContactForm() {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Send email using EmailJS
     emailjs.sendForm(
       'service_cx013wb',        // Replace with your EmailJS Service ID
       'template_8oksmj6',       // Replace with your EmailJS Template ID
-      e.target,                 // Pass the form element to sendForm
+      e.currentTarget,          // Pass the form element to sendForm
       'qQ530j6L2xIHoQJm-'       // Replace with your EmailJS User ID
     )
     .then(

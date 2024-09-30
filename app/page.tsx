@@ -36,7 +36,7 @@ function Home() {
       
       <p className={styles.cardd} id="intro">Hi, Dreamers! 💭 👋</p>  {/* Add an ID here */}
       <div> 
-          <p className={styles.me}>I`&apos;`m a</p>
+          <p className={styles.me}>I&apos;m a</p>
         </div>
       <div className={styles.code}>
       <span className="emoji"></span>
@@ -52,7 +52,9 @@ function Home() {
         <SocialMed/>
         </div>
       
-      <div className={styles.divavatar}><Image /></div>
+      <div className={styles.divavatar}>
+        <Image />
+        </div>
       
       <div>
       <Aboutt/>

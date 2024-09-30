@@ -35,7 +35,7 @@ function Projects() {
   return (
     <div>
       <h1 className={styles.abouttwo}>Digital Masterpieces🎨!</h1>
-      <h2 className={styles.academic}>`&quot;`AS A DEVELOPER💻`&quot;`</h2>
+      <h2 className={styles.academic}>`&quot;AS A DEVELOPER💻&quot;`</h2>
 
       <a href="https://mindmastershackathon.netlify.app">
         <img
@@ -47,10 +47,10 @@ function Projects() {
       </a>
       <p className={styles.paragh11}>
         Crafted a stunning HTML/CSS/JS website for a Tunisian cake company in
-        under 12 hours during the Coding Moon Challenge Hackathon!
+        under 12 hours during the 2024 Coding Moon Challenge Hackathon!
       </p>
 
-      <h2 className={styles.academic}>`&quot;`AS A Photographer📷`&quot;`</h2>
+      <h2 className={styles.academic}>&quot;AS A Photographer📷&quot;</h2>
       <div className={styles.imageGallery}>
         {images.map((image, index) =>
           image.link ? (

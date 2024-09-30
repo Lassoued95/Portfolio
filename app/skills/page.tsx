@@ -4,16 +4,19 @@ import styles from "../page.module.css";
 
 function Skills() {
   const images = [
-    "videoframe_1544.png",
+    
     "videoframe_2060.png",
-    "php.jpg",
     "python.png",
-    "css.jpg",
+    "java.png",
+    "php.jpg",
+    "sql.jpg",
     "js.png",
     "react.png",
+    "typescript.png",
     "node.jpg",
     "mongo.png",
-    "sql.jpg",
+    
+    
   ];
 
   const imagph = [
@@ -26,8 +29,8 @@ function Skills() {
 
   return (
     <div className={styles.skills}>
-      <h1 className={styles.abouttwo}>Mastering the Craft!!</h1>
-      <h2 className={styles.academic}>`&quot;`AS A DEVELOPER💻`&quot;`</h2>
+      <h1 className={styles.abouttwo}>Mastering the Craft!</h1>
+      <h2 className={styles.academic}>&quot;AS A DEVELOPER💻&quot;</h2>
       
       {/* Render images for the developer section */}
       <div className={styles.imageGallery}>
@@ -41,7 +44,7 @@ function Skills() {
         ))}
       </div>
 
-      <h2 className={styles.academic}>`&quot;`AS A PHOTOGRAPHER🌟`&quot;`</h2>
+      <h2 className={styles.academic}>&quot;AS A PHOTOGRAPHER🌟&quot;</h2>
       
       {/* Render images for the photographer section */}
       <div className={styles.imageGallery}>

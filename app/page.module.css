@@ -1,5 +1,5 @@
 .body, .main1 {
-  height: 600vh; /* or more, depending on your design */
+   /* or more, depending on your design */
  
 }
 .line {
@@ -247,10 +247,8 @@
 }
 .imageSocial {
   width: 30px; /* Adjust as needed */
-  height: auto;
+  height:auto;
   border-radius: 10px;
-  
- 
   transition: transform 0.7s ease-in-out;
   
   }
@@ -566,12 +564,14 @@
   display: none;
   cursor: pointer;
   font-size: 2rem;
-  color: white;
   padding: 10px;
+  
+  
 }
 .navbar{
   float: right;
   margin-top: -30px;
+
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -703,7 +703,10 @@
 }
 /*responsive */
 @media only screen and (max-width: 768px) {
-  
+  .body, .main1 {
+    height: 1150vh; /* or more, depending on your design */
+   
+  }
   .cardd {
     margin: 0;
     opacity: 0.6;
@@ -711,7 +714,6 @@
     max-width: 10ch;
     text-wrap: balance;
     margin-left: 20%;
-    background-color: yellow;
     margin-bottom:-10%;
     margin-top: 0%;
     height: 50px;
@@ -731,7 +733,7 @@
     font-family: var(--font-mono);
     color:bisque;
     margin-left: 20%;
-    margin-top: 30%;
+    margin-top: 35%;
     display: flex; /* Make the container a flexbox to align items in a row */
     align-items: center; /* Vertically align items in the center */
   }
@@ -749,7 +751,7 @@
     font-weight: 280;
     margin-bottom: 0.7rem;
     margin-top: 10px;
-    margin-left: 0%;
+    margin-left: -4%;
     font-family: "Arial", sans-serif;
     color: white;
     text-wrap: balance;
@@ -768,16 +770,23 @@
   }
   .social{
     margin-right: 100px;
+   
     
   }
   .avatar{
     height: 500px;
     width: 500px;
     border-radius: 20px;
-    margin-left: 0%;
+    margin-left: -7%;
     margin-top: -10%;
+    padding-top: 20px;
     filter: drop-shadow(0.5rem 5px  40px green);
     }
+    .divavatar{
+      margin-top: 4%;
+    }
+  
+    
     .ulh {
       position: absolute;
       top: 80px;
@@ -819,10 +828,7 @@
 
 
 
-  .body, .main1 {
-    height: 850vh; /* or more, depending on your design */
-   
-  }
+  
   .abouttwo{
     font-weight: bold;
     font-family: var(--font-mono);
@@ -835,7 +841,7 @@
   }
   .academic{
     color: white;
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 20px;
     font-size: 1.5em;
   }
@@ -873,6 +879,13 @@
     transition: transform 5s ease;
     flex-wrap: wrap; /* To wrap images on smaller screens */
   }
+  .image {
+    width: 140px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.7s ease-in-out;
+    }
   .logogoutina{
     height: 300px;
     width: 300px;
