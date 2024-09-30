@@ -1,5 +1,5 @@
 .body, .main1 {
-   /* or more, depending on your design */
+   height: 590vh;
  
 }
 .line {
@@ -698,13 +698,13 @@
 }
 .pp{
   color: white;
-  margin-top: 10%;
-  margin-left: 42%;
+  margin-top: 2%;
+  margin-left: 36%;
 }
 /*responsive */
 @media only screen and (max-width: 768px) {
   .body, .main1 {
-    height: 1150vh; /* or more, depending on your design */
+    height: 820vh; /* or more, depending on your design */
    
   }
   .cardd {
@@ -751,7 +751,7 @@
     font-weight: 280;
     margin-bottom: 0.7rem;
     margin-top: 10px;
-    margin-left: -4%;
+    margin-left: 25%%;
     font-family: "Arial", sans-serif;
     color: white;
     text-wrap: balance;
@@ -770,8 +770,6 @@
   }
   .social{
     margin-right: 100px;
-   
-    
   }
   .avatar{
     height: 500px;
@@ -808,36 +806,46 @@
   .lih {
       margin: 20px 0;
   }
-.menuIcon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 25px;
-  width: 50px; /* Increase the width for bigger lines */
-  height: 40px; /* Increase height to allow more space between lines */
-  cursor: pointer;
-}
-
-/* Each bar in the hamburger icon */
-.menuIcon div {
-  background-color: green; /* Or any color you prefer */
-  height: 25%; /* Increase this for thicker bars (percentage relative to the .menuIcon container's height) */
-  width: 100%; /* Full width of the container */
-  border-radius: 4px; /* Optional: to round the edges */
-}
-
-
-
+  .navbar {
+    position: fixed; /* Fixes the navbar to the top of the viewport */
+    top: -10px;          /* Aligns it to the top */
+    left: 0%;         /* Stretches it from the left */
+    right: 0;
+    height: 40px;        /* Stretches it from the right */
+    background-color: #f50707; /* Adjust the background color */
+    z-index: 1000;  /* Ensures the navbar stays on top of other content */
+    padding: 10px 0; /* Adjust padding for top and bottom spacing */
+  }
+  
+  .menuIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; /* Align the lines to the right */
+    margin-top: 7%; /* Adjust as needed */
+    margin-left: auto; /* Push the icon to the right */
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  /* Each bar in the hamburger icon */
+  .menuIcon div {
+    background-color: green;
+    height: 25%;
+    width: 100%; /* Full width */
+    border-radius: 4px;
+  }
   
   .abouttwo{
     font-weight: bold;
     font-family: var(--font-mono);
     color: bisque;
-   margin-left: 20%;
+   margin-left: 15%;
     margin-top: 10%;
     text-align: center;
     width: 65%;
-    font-size: 2em;
+    font-size: 2.0em;
   }
   .academic{
     color: white;
@@ -850,7 +858,7 @@
     margin-bottom: 0.7rem;
     width: 300px;
     margin-top: 10px;
-    margin-left: 25%;
+    margin-left: 18%;
     font-family: "Arial", sans-serif;
     color: white;
     text-wrap: balance;
@@ -911,7 +919,7 @@
     line-height: 1.8;
   }
   .pp{
-    margin-left: 25%;
+    margin-left: 10%;
   }
   
 

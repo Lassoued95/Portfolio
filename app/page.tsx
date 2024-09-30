@@ -71,7 +71,7 @@ function Home() {
       <ContactForm/>
       </div>
       <div>
-        <p className={styles.pp}>copyrigth@Mohamed Lassoued 2024</p>
+        <p className={styles.pp}>Designed for the dreamers, built by Mohamed💡</p>
       </div>
      
     </main>

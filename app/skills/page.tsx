@@ -29,7 +29,7 @@ function Skills() {
 
   return (
     <div className={styles.skills}>
-      <h1 className={styles.abouttwo}>Mastering the Craft!</h1>
+      <h1 className={styles.abouttwo}>Mastering the Craft!💡</h1>
       <h2 className={styles.academic}>&quot;AS A DEVELOPER💻&quot;</h2>
       
       {/* Render images for the developer section */}
