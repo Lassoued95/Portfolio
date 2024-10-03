@@ -91,7 +91,7 @@
 }
 
 .line {
-  position: absolute;
+  position: fi;
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(0, 255, 0, 0.5));
@@ -234,7 +234,7 @@
 }
 .social{
   margin-right: 730px;
-  
+ 
 }
 .imageGallerySocial {
   display: flex;
@@ -246,6 +246,7 @@
   flex-wrap: wrap; /* To wrap images on smaller screens */
 }
 .imageSocial {
+  
   width: 30px; /* Adjust as needed */
   height:auto;
   border-radius: 10px;
@@ -425,7 +426,7 @@
   font-weight: 600;
   margin-bottom: 0.7rem;
   width: 500px;
-  margin-top: 10px;
+  margin-top: 00px;
   margin-left: 35%;
   font-family: "Arial", sans-serif;
   color: white;
@@ -513,6 +514,7 @@
   position: relative;
 }
 .ulh{
+  backdrop-filter: blur(10px);
 	list-style-type: none;
 	margin: 10px;
 	padding: 30px;
@@ -521,7 +523,7 @@
   display: flex;
   justify-content: flex-end;
   list-style: none;
-	border-radius: 10px
+	border-radius: 10px;
 	
 }
 .lih{
@@ -565,13 +567,20 @@
   cursor: pointer;
   font-size: 2rem;
   padding: 10px;
+
   
   
 }
-.navbar{
-  float: right;
-  margin-top: -30px;
+.navbar {
+  /* Fixes the navbar to the top of the viewport */
+ top: -25px;          /* Aligns it to the top */
+ left: 0%;         /* Stretches it from the left */
+ right: 0;
+ position: fixed;
 
+ height: 40px;        /* Stretches it from the right */
+ z-index: 1000;  /* Ensures the navbar stays on top of other content */
+ padding: 10px 0; /* Adjust padding for top and bottom spacing */
 }
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -707,17 +716,103 @@
     height: 820vh; /* or more, depending on your design */
    
   }
+  
+  
+  .line {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+
+    background: rgba(255, 255, 255, 0.2);
+    animation: lineAnimation 3s  infinite;
+  }
+  .line:nth-child(1) {
+    top: 10%;
+    height: 3px; /* Slightly thicker */
+    animation-delay: 0s;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(0, 255, 0, 0.6));
+  }
+  
+  .line:nth-child(2) {
+    top: 30%;
+    height: 2px;
+    animation-delay: 0.5s;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0.5));
+  }
+  
+  .line:nth-child(3) {
+    top: 50%;
+    height: 4px; /* Slightly thicker */
+    animation-delay: 0.5s;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 255, 0.6));
+  }
+  
+  .line:nth-child(4) {
+    top: 70%;
+    height: 2px;
+    animation-delay: 3s;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 165, 0, 0.6));
+  }
+  .line:nth-child(5) {
+    top: 100%;
+    height: 2px;
+    animation-delay: 1s;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0.5));
+  }
+  .line:nth-child(6) {
+    top: 100%;
+    height: 2px;
+    animation-delay: 1s;
+    background: orange;
+  }
+  .line:nth-child(7) {
+    top: 30%;
+    height: 2px;
+    animation-delay: 1s;
+    background: red;
+  }
+  .line:nth-child(8) {
+    top: 30%;
+    height: 2px;
+    animation-delay: 1s;
+    background: green;
+  }
+  
+  @keyframes lineAnimation {
+  0% {
+    transform: translateX(-100%) rotate(0deg) scale(0.8);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translateX(-50%) rotate(45deg) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(0%) rotate(90deg) scale(1.2);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(50%) rotate(45deg) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(100%) rotate(0deg) scale(0.8);
+    opacity: 0.4;
+  }
+}
+
+  
+  
   .cardd {
     margin: 0;
-    opacity: 0.6;
-    line-height: 1.5;
-    max-width: 10ch;
+    opacity: 0.9;
     text-wrap: balance;
     margin-left: 20%;
     margin-bottom:-10%;
     margin-top: 0%;
     height: 50px;
-    width: 0%;
     font-size: 1.5em;
     
     font-weight: bold;
@@ -732,6 +827,7 @@
     font-weight: bold;
     font-family: var(--font-mono);
     color:bisque;
+    font-size: 1.8em;
     margin-left: 20%;
     margin-top: 35%;
     display: flex; /* Make the container a flexbox to align items in a row */
@@ -747,16 +843,7 @@
     display: flex; /* Make the container a flexbox to align items in a row */
     align-items: center; /* Vertically align items in the center */
   }
-  .paragh {
-    font-weight: 280;
-    margin-bottom: 0.7rem;
-    margin-top: 10px;
-    margin-left: 25%%;
-    font-family: "Arial", sans-serif;
-    color: white;
-    text-wrap: balance;
-    line-height: 1.8;
-  }
+  
   .paragh {
     font-weight: 600;
     margin-bottom: 0.7rem;
@@ -765,24 +852,40 @@
     margin-left: 20%;
     font-family: "Arial", sans-serif;
     color: white;
+    font-size: 1.1em;
     text-wrap: balance;
     line-height: 1.8;
   }
   .social{
     margin-right: 100px;
+    
   }
+  .imageSocial {
+  
+    width: 30px; /* Adjust as needed */
+    height:auto;
+    border-radius: 10px;
+    transition: transform 0.7s ease-in-out;
+    
+    }
   .avatar{
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     border-radius: 20px;
     margin-left: -7%;
-    margin-top: -10%;
-    padding-top: 20px;
-    filter: drop-shadow(0.5rem 5px  40px green);
+    margin-top: -15%;
+    align-items: flex-end;
+    padding-top: -250px;
+    filter: drop-shadow(0.6rem 15px  40px green);
+    background-size: cover;
     }
     .divavatar{
-      margin-top: 4%;
+      margin-top: 11%;
+      margin-left: -8%;
+   
+    
     }
+   
   
     
     .ulh {
@@ -807,12 +910,12 @@
       margin: 20px 0;
   }
   .navbar {
-    position: fixed; /* Fixes the navbar to the top of the viewport */
+     /* Fixes the navbar to the top of the viewport */
     top: -10px;          /* Aligns it to the top */
     left: 0%;         /* Stretches it from the left */
     right: 0;
+    position: fixed;
     height: 40px;        /* Stretches it from the right */
-    background-color: #f50707; /* Adjust the background color */
     z-index: 1000;  /* Ensures the navbar stays on top of other content */
     padding: 10px 0; /* Adjust padding for top and bottom spacing */
   }
@@ -824,6 +927,7 @@
     align-items: flex-end; /* Align the lines to the right */
     margin-top: 7%; /* Adjust as needed */
     float: right;
+   
     width: 50px;
     height: 40px;
     cursor: pointer;
@@ -831,8 +935,10 @@
   
   /* Each bar in the hamburger icon */
   .menuIcon div {
+   
     background-color: green;
     height: 25%;
+   
     width: 100%; /* Full width */
     border-radius: 4px;
   }
@@ -852,6 +958,7 @@
     margin-left: 20%;
     margin-top: 20px;
     font-size: 1.5em;
+ 
   }
   .paragh1{
     font-weight: 600;
@@ -874,6 +981,9 @@
     cursor: pointer;
     transition: transform 5s ease;
     filter: drop-shadow(0.5rem 25px  40px green);
+  }
+  .avatar2:hover{
+    transform: scale(1.3);
   }
   .skills{
     margin-top: 20%;

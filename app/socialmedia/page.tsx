@@ -4,7 +4,7 @@ import styles from "../page.module.css";
 import { link } from "fs";
 const imagsocial = [
     { src: "icons8-facebook-48.png",
-        title:"click to visit the instagram post",
+      link:"https://www.facebook.com/mohamedlassoued1010",
        
       },
       {
@@ -22,7 +22,6 @@ function SocialMed(){
        
         <div className={styles.imageGallerySocial}>
         { imagsocial.map((image, index) =>( 
-          
             <a href={image.link} key={index} target="_blank" rel="noopener">
             <img
             src={image.src}

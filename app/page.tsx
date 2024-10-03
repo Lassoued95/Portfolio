@@ -44,7 +44,7 @@ function Home() {
         
       </div>
       
-
+      
       <p className={styles.paragh} id="about">
       Step into a world where coding meets creativity. As a MERN stack developer and photographer, I craft dynamic web applications and capture moments that inspire, blending the power of modern technology with a passion for visual storytelling
       </p>
@@ -57,6 +57,8 @@ function Home() {
         </div>
       
       <div>
+      
+   
       <Aboutt/>
       
       </div>
