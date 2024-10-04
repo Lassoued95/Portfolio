@@ -1054,4 +1054,40 @@
 
   
 }
+@media only screen and (max-width: 768px) {
+  .body, .main1 {
+    height: 800vh; /* or more, depending on your design */
+   
+  }
+  .imageGallery {
+    display: flex;
+    margin-top: 2%;
+    gap: 60px; /* Space between images */
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 5s ease;
+    flex-wrap: wrap; /* To wrap images on smaller screens */
+  }
+  
+  
+  
+  
+  .image {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.7s ease-in-out;
+    }
+    .social{
+      margin-left: 20px;
+    }
+    .avatar2{
+      height: 250px;
+      width: 250px;
+      margin-top: 40px;
+      
+    }
+    
+}
 
