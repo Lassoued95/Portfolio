@@ -702,7 +702,7 @@
 /*responsive */
 @media only screen and (max-width: 768px) {
   .body, .main1 {
-    height: 820vh; /* or more, depending on your design */
+    height: 1300vh; /* or more, depending on your design */
    
   }
   
