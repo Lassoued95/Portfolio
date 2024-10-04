@@ -28,6 +28,17 @@ function Navbar() {
         };
     }, []);
 
+    // Function for smooth scrolling to the target section
+    const smoothScroll = (target: string) => {
+        const element = document.querySelector(target);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
+    };
+
     return (
         <div ref={navbarRef}>
             <div className={styles.navbar}>
@@ -41,19 +52,19 @@ function Navbar() {
                 {/* Navigation Links */}
                 <ul className={`${styles.ulh} ${isOpen ? styles.active : ""}`}>
                     <li className={styles.lih}>
-                        <a href="#home" className={styles.ah}>Home</a>
+                        <a href="#home" className={styles.ah} onClick={(e) => { e.preventDefault(); smoothScroll("#home"); setIsOpen(false); }}>Home</a>
                     </li>
                     <li className={styles.lih}>
-                        <a href="#about" className={styles.ah}>About</a>
+                        <a href="#about" className={styles.ah} onClick={(e) => { e.preventDefault(); smoothScroll("#about"); setIsOpen(false); }}>About</a>
                     </li>
                     <li className={styles.lih}>
-                        <a href="#skills" className={styles.ah}>Skills</a>
+                        <a href="#skills" className={styles.ah} onClick={(e) => { e.preventDefault(); smoothScroll("#skills"); setIsOpen(false); }}>Skills</a>
                     </li>
                     <li className={styles.lih}>
-                        <a href="#projects" className={styles.ah}>Projects</a>
+                        <a href="#projects" className={styles.ah} onClick={(e) => { e.preventDefault(); smoothScroll("#projects"); setIsOpen(false); }}>Projects</a>
                     </li>
                     <li className={styles.lih}>
-                        <a href="#contact" className={styles.ah}>Contact</a>
+                        <a href="#contact" className={styles.ah} onClick={(e) => { e.preventDefault(); smoothScroll("#contact"); setIsOpen(false); }}>Contact</a>
                     </li>
                 </ul>
             </div>

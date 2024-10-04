@@ -11,14 +11,7 @@
   animation: moveDown 5s infinite;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100%); /* Moves the lines down */
-  }
-}
+
 
 .main {
   display: flex;
@@ -54,6 +47,18 @@
   margin-top: 15%;
   display: flex; /* Make the container a flexbox to align items in a row */
   align-items: center; /* Vertically align items in the center */
+  animation:me 3s ease-in-out; /* Add infinite looping and smoother animation */
+  transform: scale(1);
+}
+
+
+@keyframes me {
+  0% {
+    transform: translateX(-500px)
+  }
+  100% {
+    transform: translateX(0px)
+  }
 }
 
 .line {
@@ -62,6 +67,7 @@
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
   animation: lineAnimation 3s  infinite;
+  position: fixed;
 }
 
 @keyframes lineAnimation {
@@ -151,32 +157,28 @@
   background: green;
 }
 
-/* useScroll hook from framer Motion libarary*/
 
-
-.scrollBox {
-  width: 100%;
-  height: 300px;
-  background-color: lightblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  color: white;
-  margin: 20px 0;
-}
-
-.avatar{
- 
+.avatar {
   height: 650px;
   width: 650px;
   border-radius: 20px;
-  margin-left: 60%;
-  margin-top: -70%;
-  padding-top: 0%;
-  filter: drop-shadow(0.5rem 5px  40px green);
-  
+  margin-left: 50%; /* Center the avatar more */
+  margin-top: -50%;
+  padding-top: 0;
+  filter: drop-shadow(0.5rem 5px 40px green);
+  animation: avatarr 3s ease-in-out; /* Add infinite looping and smoother animation */
+  transform: scale(1);
 }
+
+@keyframes avatarr {
+  0% {
+    transform: translateX(500px)
+  }
+  100% {
+    transform: translateX(0px)
+  }
+}
+
 .divavatar{
   margin-top: 0%;
 }
@@ -234,6 +236,9 @@
 }
 .social{
   margin-right: 730px;
+  animation: me 3s ease-in-out; /* Add infinite looping and smoother animation */
+  transform: scale(1);
+  
  
 }
 .imageGallerySocial {
@@ -265,6 +270,8 @@
   margin-top:0%;
   display: flex; /* Make the container a flexbox to align items in a row */
   align-items: center; /* Vertically align items in the center */
+  animation:me 3s ease-in-out; /* Add infinite looping and smoother animation */
+  transform: scale(1);
 }
 
 .code .text {
@@ -400,15 +407,6 @@
 }
 
 
-@keyframes fadeIn {
-  from { opacity: 3; }
-  to { opacity: 0; }
-}
-
-@keyframes bounceEmoji {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-}
 
 /*paragh*/
 .paragh {
@@ -421,6 +419,8 @@
   color: white;
   text-wrap: balance;
   line-height: 1.8;
+  animation: me 3s ease-in-out; /* Add infinite looping and smoother animation */
+  transform: scale(1);
 }
 .paragh1{
   font-weight: 600;
@@ -432,6 +432,7 @@
   color: white;
   text-wrap: balance;
   line-height: 1.8;
+ 
 }
 .paragh11{
   font-weight: 600;
@@ -693,21 +694,10 @@
   }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-.divv{
-  color: aqua;
-}
 .pp{
   color: white;
-  margin-top: 2%;
-  margin-left: 36%;
+  margin-left: 38%;
+  margin-top: 20px;
 }
 /*responsive */
 @media only screen and (max-width: 768px) {
@@ -813,13 +803,14 @@
     margin-top: 0%;
     height: 50px;
     font-size: 1.5em;
-    
     font-weight: bold;
     color:bisque; /* Coral color */
     -webkit-background-clip: text;
    
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 2s ease-in-out, bounceEmoji 1s infinite;
+   
+    animation:me 3s ease-in-out; /* Add infinite looping and smoother animation */
+    transform: scale(1);
   }
   .me{
     font-size: 1.5em;
@@ -857,7 +848,7 @@
   }
   .social{
     margin-right: 100px;
-    
+   
   }
   .imageSocial {
   
@@ -865,6 +856,7 @@
     height:auto;
     border-radius: 10px;
     transition: transform 0.7s ease-in-out;
+    
     
     }
   .avatar{
@@ -908,6 +900,34 @@
   .lih {
       margin: 20px 0;
   }
+  .ah{
+	color: white;
+  text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+	padding: 15px 25px;
+	text-decoration: none;
+	display:inline-block;
+  position: relative;
+
+}
+.ah:after {
+  content: ''; /* Required to generate the :after pseudo-element */
+  position: absolute;
+  width: 0;
+  height: 2px; /* Height of the underline */
+  background-color: green;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for the hover effect */
+}
+.ah:hover{
+  width: 100%;
+  left: 0;
+	color: green;
+}
   .navbar {
      /* Fixes the navbar to the top of the viewport */
     top: -35px;          /* Aligns it to the top */
