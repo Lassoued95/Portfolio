@@ -859,9 +859,8 @@
     .divavatar{
       margin-top: 11%;
       margin-left: -15%;
-   
-    
     }
+   
    .ulh {
       position: absolute;
       top: 80px;
@@ -974,13 +973,12 @@
     line-height: 1.8;
   }
   .avatar2{
-    height: 280px;
-    width: 280px;
+    height: 250px;
+    width: 250px;
     border-radius: 00px ;
-    margin-left: 12%;
+    margin-left: 18%;
     border-radius: 10px;
     margin-top: 0%;
-   
     cursor: pointer;
     transition: transform 5s ease;
     filter: drop-shadow(0.5rem 25px  40px green);
@@ -1042,7 +1040,7 @@
 }
 @media only screen and (max-width: 320px) {
   .body, .main1 {
-    height: 1000vh; /* or more, depending on your design */
+    height: 1200vh; /* or more, depending on your design */
    
   }
   .imageGallery {
