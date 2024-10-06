@@ -1040,7 +1040,7 @@
 }
 @media only screen and (max-width: 320px) {
   .body, .main1 {
-    height: 1100vh; /* or more, depending on your design */
+    height: 1000vh; /* or more, depending on your design */
    
   }
   .imageGallery {
@@ -1057,7 +1057,7 @@
   
   
   .image {
-    width: 130px; /* Adjust as needed */
+    width: 100px; /* Adjust as needed */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -1083,24 +1083,24 @@
     .paragh {
       font-weight: 600;
       margin-bottom: 0.7rem;
-      width: 250px;
+      width: 230px;
       margin-top: 10px;
       margin-left: 20%;
       font-family: "Arial", sans-serif;
       color: white;
       font-size: 0.8em;
       text-wrap: balance;
-      line-height: 1.8;
+      line-height: 2em;
     }
     .paragh1{
       font-weight: 600;
       margin-bottom: 0.7rem;
-      width: 250px;
+      width: 230px;
     }
     .paragh11{
       font-weight: 600;
       margin-bottom: 0.7rem;
-      width: 250px;
+      width: 230px;
       margin-left: 10%;
     }
     .social{
