@@ -1038,7 +1038,7 @@
 
   
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 345px) {
   .body, .main1 {
     height: 1000vh; /* or more, depending on your design */
    
