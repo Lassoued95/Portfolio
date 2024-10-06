@@ -688,7 +688,7 @@
 /*responsive */
 @media only screen and (max-width: 768px) {
   .body, .main1 {
-    height: 1100vh; /* or more, depending on your design */
+    height: 1000vh; /* or more, depending on your design */
    
   }
   
@@ -1040,7 +1040,7 @@
 }
 @media only screen and (max-width: 320px) {
   .body, .main1 {
-    height: 1200vh; /* or more, depending on your design */
+    height: 1100vh; /* or more, depending on your design */
    
   }
   .imageGallery {
