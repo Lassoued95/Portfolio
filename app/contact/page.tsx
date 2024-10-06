@@ -50,7 +50,7 @@ function ContactForm() {
   return (
     <div className={styles.contactFormContainer}>
       <h4>📞+216 25 740 872</h4>
-      <h4>✉️lassouedmohamed2004@gmail.com</h4>
+      <h4 className={styles.h4}>✉️lassouedmohamed2004@gmail.com</h4>
       <h4>📍Djerba Midoun 4116</h4>
       <form onSubmit={handleSubmit} className={styles.contactForm}>
         <div className={styles.formGroup}>

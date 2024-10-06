@@ -1110,6 +1110,43 @@
     .academic{
       font-size: 1.3em;
     }
+    .contactFormContainer {
+      margin-top: -10%;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #202b40;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    .contactFormContainer h2 {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 30px;
+      color: #00d1b2;
+    }
+    
+    .contactForm {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .h4{
+      font-size: 14px;
+    }
+    .paragh11{
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+      width: 75%;
+      margin-top: -70px;
+      margin-left: 25%;
+      font-family: "Arial", sans-serif;
+      color: white;
+      text-wrap: balance;
+      line-height: 1.8;
+    }
     
     
 }
