@@ -983,9 +983,10 @@
     transition: transform 5s ease;
     filter: drop-shadow(0.5rem 25px  40px green);
   }
-  .avatar2:hover{
-    transform: scale(1.3);
+  .avatar2:hover {
+    transform: none; /* Removes the hover effect */
   }
+  
   .skills{
     margin-top: 20%;
   }
@@ -1004,6 +1005,9 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.7s ease-in-out;
+    }
+    .image:hover {
+      transform: none; /* Removes the hover effect */
     }
   .logogoutina{
     height: 300px;
